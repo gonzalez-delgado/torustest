@@ -1,0 +1,15 @@
+Package: torustest
+Type: Package
+Title: Two-sample goodness-of-fit tests on the two-dimensional flat torus based on Wasserstein distance
+Version: 0.1.0
+Author: Javier González-Delgado
+Maintainer: Javier González-Delgado <javier.gonzalez-delgado@math.univ-toulouse.fr>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+Encoding: UTF-8
+Imports: BAMBI, circular, doParallel, FRACTION, ggplot2, pracma, proxy,
+        transport, uniformly
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2023-01-24 12:34:47 UTC; jgonzale
+License: MIT + file LICENSE
