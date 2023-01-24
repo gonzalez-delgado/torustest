@@ -7,7 +7,7 @@
 #'
 #' @return The statistic realization of samples x, y.
 #'
-#' #' @references [1] Delon, J., Salomon, J., Sobolevskii, A.: Fast transport optimization for Monge costs on the circle. SIAM J. Appl. Math. 70(7), 2239–2258 (2010).
+#' @references [1] Delon, J., Salomon, J., Sobolevskii, A.: Fast transport optimization for Monge costs on the circle. SIAM J. Appl. Math. 70(7), 2239–2258 (2010).
 #' [2] RAMDAS, A., GARCIA, N. and CUTURI, M. (2015). On Wasserstein Two Sample Testing and Related Families of Nonparametric Tests. Entropy 19.
 #'
 #' @examples
@@ -17,7 +17,7 @@
 #'
 #' @export
 
-stat.s1<- function(x, y){
+stat.s1 <- function(x, y){
 
   fy <- stats::ecdf(y)
   h <- function(t){(fy(stats::quantile(x, t)) - t)}
