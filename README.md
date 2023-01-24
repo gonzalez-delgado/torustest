@@ -3,10 +3,10 @@ Two-sample goodness-of-fit tests on the two-dimensional flat torus based on Wass
 
 The goal of **torustest** is to provide some practical approaches to perform two-sample goodness-of-fit tests for measures supported on the two-dimensional flat torus based on Wasserstein distance. These techniques have been introduced in [1] and consist on:
 
-1. Testing the equality of the one-dimensional projected distributions into $N_g$ closed geodesics [(twosample.geodesic.torus.test function)](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.geodesic.torus.test.R),
-2. Upper bound p-values [(twosample.ubound.torus.test function)](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.ubound.torus.test.R).
+1. Testing the equality of the one-dimensional projected distributions into $N_g$ closed geodesics ([twosample.geodesic.torus.test](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.geodesic.torus.test.R) function),
+2. Upper bound p-values ([twosample.ubound.torus.test function](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.ubound.torus.test.R) function).
 
-Besides, a Wasserstein two-sample goodness-of-fit test for measures supported on the circle is also performed by [(twosample.test.s1.R)](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.test.s1.R).
+Besides, a Wasserstein two-sample goodness-of-fit test for measures supported on the circle is also performed by [twosample.test.s1.R](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.test.s1.R).
 
 Each file includes details on how to implement the test, as well as some minimal reproducible examples.
 
