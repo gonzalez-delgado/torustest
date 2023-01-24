@@ -8,7 +8,7 @@ The goal of **torustest** is to provide some practical approaches to perform two
 
 Besides, a Wasserstein two-sample goodness-of-fit test for measures supported on the circle is also performed by [twosample.test.s1.R](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.test.s1.R).
 
-Each file includes details on how to implement the test, as well as some minimal reproducible examples.
+Each file includes details on how to implement the test, as well as some minimal reproducible examples. The complete documentation is provided in (torustest.pdf)[https://github.com/gonzalez-delgado/torustest/blob/master/torustest.pdf].
 
 ### Installing torustest
 
