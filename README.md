@@ -10,7 +10,7 @@ Besides, a Wasserstein two-sample goodness-of-fit test for measures supported on
 
 Each file includes details on how to implement the test, as well as some minimal reproducible examples.
 
-## Installing torustest
+### Installing torustest
 
 **torustest** can be installed using
 
