@@ -1,5 +1,4 @@
 # torustest
-Two-sample goodness-of-fit tests on the two-dimensional flat torus based on Wasserstein distance.
 
 **torustest** is an $\texttt{R}$ package implementing the approaches introduced in [1] to perform two-sample goodness-of-fit tests for measures supported on the two-dimensional flat torus, based on Wasserstein distance.
 
