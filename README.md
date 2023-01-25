@@ -14,7 +14,7 @@ devtools::install_github("https://github.com/gonzalez-delgado/torustest")
 
 Given two measures $P,Q\in\mathcal{P}(\mathbb{T}^2)$, we consider the null hypothesis $H_0:P=Q$. The package **torustest** allows the assessment of $H_0$ through two different procedures, detailed below.
 
-#### Projection to one-dimensional closed geodesics
+#### Projection into one-dimensional closed geodesics
 
 The first approach tests the equality of the one-dimensional projected distributions of $P$ and $Q$ into $N_g$ closed geodesics of $\mathbb{T}^2$, which are isomorphic to the circle $S^1$. Given a pair of samples in the periodic $[0,1]\times[0,1]$, the function [twosample.geodesic.torus.test](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.geodesic.torus.test.R) returns a $p$-value for $H_0$, after specifying the number of projections $N_g$, which may be randomly chosen.
 
