@@ -10,11 +10,13 @@
 devtools::install_github("https://github.com/gonzalez-delgado/torustest")
 ```
 
+For any inquires, please [contact us](mailto:javier.gonzalez-delgado@math.univ-toulouse.fr).
+
 ### Two-sample goodness-of-fit tests
 
 Given two measures $P,Q\in\mathcal{P}(\mathbb{T}^2)$, we consider the null hypothesis $H_0:P=Q$. The package **torustest** allows the assessment of $H_0$ through two different procedures, detailed below.
 
-#### Projection into one-dimensional closed geodesics
+#### 1. Projection into one-dimensional closed geodesics
 
 The first approach tests the equality of the one-dimensional projected distributions of $P$ and $Q$ into $N_g$ closed geodesics of $\mathbb{T}^2$, which are isomorphic to the circle $S^1$. Given a pair of samples in the periodic $[0,1]\times[0,1]$, the function [twosample.geodesic.torus.test](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.geodesic.torus.test.R) returns a $p$-value for $H_0$, after specifying the number of projections $N_g$, which may be randomly chosen.
 
@@ -61,7 +63,7 @@ y <- as.numeric(circular::rvonmises(n, pi, 0)/(2*pi))
 twosample.test.s1(x, y, sim_free_null) 
 ```
 
-### $p$-value upper bound
+### 2. $p$-value upper bound
 
 The second approach computes an upper bound for the $p$-value $\mathbb{P}_{H_0}(\mathcal{W}_2^2(P_n,Q_m)\geq t_{nm})$, where $P_n,Q_m$ are the empirical probability measures of $P,Q$, $\mathcal{W}_2^2(P_n,Q_m)$ denotes their squared $2$-Wasserstein distance and $t_{nm}$ the distance value for the pair of samples considered. The upper bound is asymptotically consistent at level $\alpha$, for any $\alpha>0$, and has reasonable power for large sample sizes. The function [twosample.ubound.torus.test function](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.ubound.torus.test.R) return the upper-bound for a pair of samples in the peridoic $[0,1]\times[0,1]$.
 
