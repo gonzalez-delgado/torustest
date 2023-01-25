@@ -65,7 +65,7 @@ twosample.test.s1(x, y, sim_free_null)
 
 ### 2. $p$-value upper bound
 
-The second approach computes an upper bound for the $p$-value $\mathbb{P}_{H_0}$, where $P_n,Q_m$ are the empirical probability measures of $P,Q$, $\mathcal{W}_2^2(P_n,Q_m)$ denotes their squared $2$-Wasserstein distance and $t_{nm}$ the distance value for the pair of samples considered. The upper bound is asymptotically consistent at level $\alpha$, for any $\alpha>0$, and has reasonable power for large sample sizes. The function [twosample.ubound.torus.test function](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.ubound.torus.test.R) return the upper-bound for a pair of samples in the peridoic $[0,1]\times[0,1]$.
+The second approach computes an upper bound for the $p$-value $\mathbb{P}_{H_0}(\mathcal{W})$, where $P_n,Q_m$ are the empirical probability measures of $P,Q$, $\mathcal{W}_2^2(P_n,Q_m)$ denotes their squared $2$-Wasserstein distance and $t_{nm}$ the distance value for the pair of samples considered. The upper bound is asymptotically consistent at level $\alpha$, for any $\alpha>0$, and has reasonable power for large sample sizes. The function [twosample.ubound.torus.test function](https://github.com/gonzalez-delgado/torustest/blob/master/R/twosample.ubound.torus.test.R) return the upper-bound for a pair of samples in the peridoic $[0,1]\times[0,1]$.
 
 #### Example
 
