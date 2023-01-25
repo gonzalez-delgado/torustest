@@ -26,18 +26,18 @@ The first approach tests the equality of the one-dimensional projected distribut
 n <- 100 # Sample size
  
 # Simulate the null distribution of the circle test statistic
-sim_free_null <- sim.null.stat(500, NC = 2)
+sim_free_null <- torustest::sim.null.stat(500, NC = 2)
 
 # Bivariate von Mises distributions
 samp_1 <- BAMBI::rvmcos(n) / (2 * pi) 
 samp_2 <- BAMBI::rvmcos(n) / (2 * pi)
 
 # 4 geodesics are chosen randomly
-twosample.geodesic.torus.test(samp_1, samp_2, n_geodesics = 3, NC_geodesic = 2, sim_null = sim_free_null) 
+torustest::twosample.geodesic.torus.test(samp_1, samp_2, n_geodesics = 3, NC_geodesic = 2, sim_null = sim_free_null) 
 
 # 4 geodesics are chosen a priori
 glist <- list(c(1, 0), c(0, 1), c(1, 1), c(2, 3))
-twosample.geodesic.torus.test(samp_1, samp_2, geodesic_list = glist, NC_geodesic = 2, sim_null = sim_free_null) 
+torustest::twosample.geodesic.torus.test(samp_1, samp_2, geodesic_list = glist, NC_geodesic = 2, sim_null = sim_free_null) 
 
 ```
 
@@ -52,15 +52,15 @@ n <- 50 # Sample size
  
 # Simulate the statistic null distribution
 NR <- 100
-sim_free_null <- sim.null.stat(500, NC = 2)
+sim_free_null <- torustest::sim.null.stat(500, NC = 2)
 
 x <- runif(n, 0, 1)
 y <- runif(n, 0, 1)
-twosample.test.s1(x, y, sim_free_null) 
+torustest::twosample.test.s1(x, y, sim_free_null) 
 
 x <- as.numeric(circular::rvonmises(n, pi, 1)/(2*pi))
 y <- as.numeric(circular::rvonmises(n, pi, 0)/(2*pi))
-twosample.test.s1(x, y, sim_free_null) 
+torustest::twosample.test.s1(x, y, sim_free_null) 
 ```
 
 ### 2. $p$-value upper bound
@@ -75,11 +75,11 @@ n <- 2000 # Sample size
 # Bivariate von Mises distribution
 samp_1 <- BAMBI::rvmcos(n, kappa1 = 1, kappa2 = 1, mu1 = 0, mu2 = 0)/(2*pi)
 samp_2 <- BAMBI::rvmcos(n, kappa1 = 1, kappa2 = 1, mu1 = 0, mu2 = 0)/(2*pi)
-twosample.ubound.torus.test(samp_1, samp_2) 
+torustest::twosample.ubound.torus.test(samp_1, samp_2) 
 
 samp_1 <- BAMBI::rvmcos(n ,kappa1 = 0, kappa2 = 0, mu1 = 0.5, mu2 = 0.5)/(2*pi)
 samp_2 <- BAMBI::rvmcos(n, kappa1 = 1, kappa2 = 1, mu1 = 0.5, mu2 = 0.5)/(2*pi)
-twosample.ubound.torus.test(samp_1, samp_2) 
+torustest::twosample.ubound.torus.test(samp_1, samp_2) 
 ```
 
 ### References
