@@ -54,11 +54,11 @@ twosample.geodesic.torus.test<-function(sample_1, sample_2, n_geodesics = 1, NC_
     samp <- rgeodesic(n_geodesics)}else{
       samp <- matrix(unlist(geodesic_list), ncol=2, byrow = TRUE)}
   
-  cl<-parallel::makeCluster(NC_geodesic, type = "PSOCK")
+  cl <- parallel::makeCluster(NC_geodesic, type = "PSOCK")
   parallel::clusterExport(cl = cl, varlist = c('geodesic.projection', 'twosample.test.s1',
                                            'stat.s1', 'sim.null.stat'))
   parallel::clusterExport(cl = cl, varlist = c('sim_null'), envir = environment())
-  all_projections<-parallel::parApply(cl, FUN = one_geodesic_test, X = samp, MARGIN = 1, data_1 = sample_1, data_2 = sample_2, sim_null_free = sim_null)
+  all_projections <- parallel::parApply(cl, FUN = one_geodesic_test, X = samp, MARGIN = 1, data_1 = sample_1, data_2 = sample_2, sim_null_free = sim_null)
   parallel::stopCluster(cl)
   
   return(min(1, n_geodesics*(min(all_projections))))
