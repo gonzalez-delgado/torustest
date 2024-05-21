@@ -10,7 +10,7 @@ $\texttt{torustest}$ can be installed using
 devtools::install_github("https://github.com/gonzalez-delgado/torustest")
 ```
 
-For any inquires, please file an [issue](https://github.com/gonzalez-delgado/torustest/issues) or [contact us](mailto:javier.gonzalez-delgado@math.univ-toulouse.fr).
+For any inquires, please file an [issue](https://github.com/gonzalez-delgado/torustest/issues) or [contact us](mailto:javier.gonzalezdelgado@mcgill.ca).
 
 ### Two-sample goodness-of-fit tests
 
