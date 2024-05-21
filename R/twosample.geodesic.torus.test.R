@@ -29,7 +29,7 @@
 #' samp_2 <- BAMBI::rvmcos(n) / (2 * pi)
 #' 
 #' #4 geodesics are chosen randomly
-#' twosample.geodesic.torus.test(samp_1, samp_2, n_geodesics = 3,
+#' twosample.geodesic.torus.test(samp_1, samp_2, n_geodesics = 4,
 #' NC_geodesic = 2, sim_null = sim_free_null) 
 #'
 #' #4 geodesics are chosen a priori
