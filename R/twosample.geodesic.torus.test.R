@@ -61,7 +61,7 @@ twosample.geodesic.torus.test<-function(sample_1, sample_2, n_geodesics = 1, NC_
   all_projections <- parallel::parApply(cl, FUN = one_geodesic_test, X = samp, MARGIN = 1, data_1 = sample_1, data_2 = sample_2, sim_null_free = sim_null)
   parallel::stopCluster(cl)
   
-  return(min(1, n_geodesics*(min(all_projections))))
+  return(min(1, nrow(samp)*(min(all_projections))))
   
 }
   
